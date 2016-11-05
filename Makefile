@@ -5,6 +5,9 @@ SOURCES=main.cpp hello.cpp factorial.cpp
 OBJECTS=$(SOURCES:.cpp=.o)
 EXECUTABLE=hello
 
+clean:
+	rm *.o *~
+	
 all: $(SOURCES) $(EXECUTABLE)
 	
 $(EXECUTABLE): $(OBJECTS)
