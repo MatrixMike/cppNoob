@@ -6,7 +6,7 @@ OBJECTS=$(SOURCES:.cpp=.o)
 EXECUTABLE=hello
 
 clean:
-	rm *.o *~
+	rm *.o *~ hello
 	
 all: $(SOURCES) $(EXECUTABLE)
 	
