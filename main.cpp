@@ -8,7 +8,7 @@ int main()
 {
 //   print_hello();
 //    std::cout << endl;
-	std::cout << "The factorial of 5 is ";	// << factorial(5) << "\n";
+	std::cout << "The factorial of 5 is " << factorial(5) << "\n";
 	std::cout << "\n";
 
 	stack stack;
