@@ -23,7 +23,7 @@ int main(int argc, char **argv)
 {   
 	int year[monthsInYear] = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };	// days in months        
 	std::cout << "Hello World!" << std::endl;
-	int daysInYear = 0;
+	int daysInYear(0);
 	for (int mths = 0; mths < monthsInYear; mths++) {
 //              Serial.print(" mths "); Serial.print(year[mths]);Serial.print(" ");     Serial.println(1 + mths);
 		std::cout << " mths ";
