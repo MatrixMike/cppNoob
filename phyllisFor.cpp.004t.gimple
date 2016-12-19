@@ -1,0 +1,255 @@
+int main(int, char**) (int argc, char * * argv)
+{
+  struct basic_ostream & D.20854;
+  int D.20855;
+  int D.20856;
+  int D.20857;
+  int D.20858;
+
+  {
+    int year[12];
+    int daysInYear;
+
+    try
+      {
+        year[0] = 31;
+        year[1] = 28;
+        year[2] = 31;
+        year[3] = 30;
+        year[4] = 31;
+        year[5] = 30;
+        year[6] = 31;
+        year[7] = 31;
+        year[8] = 30;
+        year[9] = 31;
+        year[10] = 30;
+        year[11] = 31;
+        D.20854 = std::operator<< <std::char_traits<char> > (&cout, "Hello World!");
+        std::basic_ostream<char>::operator<< (D.20854, endl);
+        daysInYear = 0;
+        {
+          int mths;
+
+          mths = 0;
+          goto <D.20834>;
+          <D.20833>:
+          std::operator<< <std::char_traits<char> > (&cout, " mths ");
+          D.20855 = year[mths];
+          std::basic_ostream<char>::operator<< (&cout, D.20855);
+          std::operator<< <std::char_traits<char> > (&cout, " ");
+          D.20856 = mths + 1;
+          std::basic_ostream<char>::operator<< (&cout, D.20856);
+          D.20857 = year[mths];
+          daysInYear = D.20857 + daysInYear;
+          std::basic_ostream<char>::operator<< (&cout, endl);
+          mths = mths + 1;
+          <D.20834>:
+          if (mths <= 11) goto <D.20833>; else goto <D.20831>;
+          <D.20831>:
+        }
+        std::basic_ostream<char>::operator<< (&cout, daysInYear);
+        std::basic_ostream<char>::operator<< (&cout, endl);
+        D.20858 = 0;
+        return D.20858;
+      }
+    finally
+      {
+        year = {CLOBBER};
+      }
+  }
+  D.20858 = 0;
+  return D.20858;
+}
+
+
+std::basic_ostream<_CharT, _Traits>& std::endl(std::basic_ostream<_CharT, _Traits>&) [with _CharT = char; _Traits = std::char_traits<char>] (struct basic_ostream & __os)
+{
+  struct basic_ostream & D.20864;
+  int (*__vtbl_ptr_type) () * D.20865;
+  int (*__vtbl_ptr_type) () * D.20866;
+  long int D.20867;
+  sizetype D.20868;
+  struct basic_ios * D.20869;
+  char D.20870;
+  int D.20871;
+  struct basic_ostream & D.20872;
+
+  D.20865 = __os->_vptr.basic_ostream;
+  D.20866 = D.20865 + 18446744073709551592;
+  D.20867 = MEM[(long int *)D.20866];
+  D.20868 = (sizetype) D.20867;
+  D.20869 = __os + D.20868;
+  D.20870 = std::basic_ios<char>::widen (D.20869, 10);
+  D.20871 = (int) D.20870;
+  D.20872 = std::basic_ostream<char>::put (__os, D.20871);
+  D.20864 = std::flush<char, std::char_traits<char> > (D.20872);
+  return D.20864;
+}
+
+
+std::basic_ios<_CharT, _Traits>::char_type std::basic_ios<_CharT, _Traits>::widen(char) const [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ios<_CharT, _Traits>::char_type = char] (const struct basic_ios * const this, char __c)
+{
+  char_type D.20877;
+  int D.20878;
+  const struct __ctype_type * D.20879;
+  const struct ctype & D.20880;
+
+  D.20878 = (int) __c;
+  D.20879 = this->_M_ctype;
+  D.20880 = std::__check_facet<std::ctype<char> > (D.20879);
+  D.20877 = std::ctype<char>::widen (D.20880, D.20878);
+  return D.20877;
+}
+
+
+const _Facet& std::__check_facet(const _Facet*) [with _Facet = std::ctype<char>] (const struct ctype * __f)
+{
+  const struct ctype & D.20886;
+
+  if (__f == 0B) goto <D.20884>; else goto <D.20885>;
+  <D.20884>:
+  std::__throw_bad_cast ();
+  <D.20885>:
+  D.20886 = __f;
+  return D.20886;
+}
+
+
+std::ctype<char>::char_type std::ctype<char>::widen(char) const (const struct ctype * const this, char __c)
+{
+  char D.20888;
+  char_type D.20891;
+  unsigned char __c.0;
+  int D.20893;
+  int (*__vtbl_ptr_type) () * D.20894;
+  int (*__vtbl_ptr_type) () * D.20895;
+  int (*__vtbl_ptr_type) () D.20896;
+  int D.20897;
+
+  D.20888 = this->_M_widen_ok;
+  if (D.20888 != 0) goto <D.20889>; else goto <D.20890>;
+  <D.20889>:
+  __c.0 = (unsigned char) __c;
+  D.20893 = (int) __c.0;
+  D.20891 = this->_M_widen[D.20893];
+  return D.20891;
+  <D.20890>:
+  std::ctype<char>::_M_widen_init (this);
+  D.20894 = this->D.15095._vptr.facet;
+  D.20895 = D.20894 + 48;
+  D.20896 = *D.20895;
+  D.20897 = (int) __c;
+  D.20891 = OBJ_TYPE_REF(D.20896;this->6) (this, D.20897);
+  return D.20891;
+}
+
+
+std::basic_ostream<_CharT, _Traits>& std::flush(std::basic_ostream<_CharT, _Traits>&) [with _CharT = char; _Traits = std::char_traits<char>] (struct basic_ostream & __os)
+{
+  struct basic_ostream & D.20900;
+
+  D.20900 = std::basic_ostream<char>::flush (__os);
+  return D.20900;
+}
+
+
+std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const char*) [with _Traits = std::char_traits<char>] (struct basic_ostream & __out, const char * __s)
+{
+  int (*__vtbl_ptr_type) () * D.20905;
+  int (*__vtbl_ptr_type) () * D.20906;
+  long int D.20907;
+  sizetype D.20908;
+  struct basic_ios * D.20909;
+  long unsigned int D.20911;
+  long int D.20912;
+  struct basic_ostream & D.20913;
+
+  if (__s == 0B) goto <D.20903>; else goto <D.20904>;
+  <D.20903>:
+  D.20905 = __out->_vptr.basic_ostream;
+  D.20906 = D.20905 + 18446744073709551592;
+  D.20907 = MEM[(long int *)D.20906];
+  D.20908 = (sizetype) D.20907;
+  D.20909 = __out + D.20908;
+  std::basic_ios<char>::setstate (D.20909, 1);
+  goto <D.20910>;
+  <D.20904>:
+  D.20911 = std::char_traits<char>::length (__s);
+  D.20912 = (long int) D.20911;
+  std::__ostream_insert<char, std::char_traits<char> > (__out, __s, D.20912);
+  <D.20910>:
+  D.20913 = __out;
+  return D.20913;
+}
+
+
+void std::basic_ios<_CharT, _Traits>::setstate(std::ios_base::iostate) [with _CharT = char; _Traits = std::char_traits<char>; std::ios_base::iostate = std::_Ios_Iostate] (struct basic_ios * const this, iostate __state)
+{
+  _Ios_Iostate D.20915;
+  _Ios_Iostate D.20916;
+
+  D.20915 = std::basic_ios<char>::rdstate (this);
+  D.20916 = std::operator| (D.20915, __state);
+  std::basic_ios<char>::clear (this, D.20916);
+}
+
+
+std::ios_base::iostate std::basic_ios<_CharT, _Traits>::rdstate() const [with _CharT = char; _Traits = std::char_traits<char>; std::ios_base::iostate = std::_Ios_Iostate] (const struct basic_ios * const this)
+{
+  iostate D.20918;
+
+  D.20918 = this->D.18137._M_streambuf_state;
+  return D.20918;
+}
+
+
+std::_Ios_Iostate std::operator|(std::_Ios_Iostate, std::_Ios_Iostate) (_Ios_Iostate __a, _Ios_Iostate __b)
+{
+  _Ios_Iostate D.20920;
+
+  D.20920 = __a | __b;
+  return D.20920;
+}
+
+
+static std::size_t std::char_traits<char>::length(const char_type*) (const char_type * __s)
+{
+  size_t D.20922;
+
+  D.20922 = __builtin_strlen (__s);
+  return D.20922;
+}
+
+
+std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ostream_type& (*)(std::basic_ostream<_CharT, _Traits>::__ostream_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>] (struct basic_ostream * const this, struct __ostream_type & (*<T31a3>) (struct __ostream_type &) __pf)
+{
+  struct __ostream_type & D.20924;
+
+  D.20924 = __pf (this);
+  return D.20924;
+}
+
+
+void __static_initialization_and_destruction_0(int, int) (int __initialize_p, int __priority)
+{
+  if (__initialize_p == 1) goto <D.20927>; else goto <D.20928>;
+  <D.20927>:
+  if (__priority == 65535) goto <D.20929>; else goto <D.20930>;
+  <D.20929>:
+  std::ios_base::Init::Init (&__ioinit);
+  __cxa_atexit (__comp_dtor , &__ioinit, &__dso_handle);
+  goto <D.20931>;
+  <D.20930>:
+  <D.20931>:
+  goto <D.20932>;
+  <D.20928>:
+  <D.20932>:
+}
+
+
+(static initializers for phyllisFor.cpp) ()
+{
+  __static_initialization_and_destruction_0 (1, 65535);
+}
+
+
