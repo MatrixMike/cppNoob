@@ -1,7 +1,10 @@
 CC=g++
-CFLAGS=-c -Wall
+CFLAGS+=-c -Wall
+CFLAGS+=-ansi -pedantic-errors
+
 LDFLAGS=
-SOURCES=main.cpp hello.cpp factorial.cpp 
+SOURCES=main.cpp factorial.cpp 
+# SOURCES+=hello.cpp 
 #phyllisFor.cpp
 OBJECTS=$(SOURCES:.cpp=.o)
 EXECUTABLE=hello

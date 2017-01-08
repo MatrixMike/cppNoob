@@ -2,7 +2,7 @@
 #include "functions.h"
 
 #include "class1.cpp"
-//int factorial(int n);
+int factorial(int n);
 
 int main()
 {
