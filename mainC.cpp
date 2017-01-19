@@ -11,7 +11,7 @@ class Shape {
          height = b;
       }
 		
-      int area() {
+      virtual int area() {
          cout << "Parent class area :" <<endl;
          return 0;
       }
