@@ -1,5 +1,6 @@
 #include <iostream> 
 using namespace std;
+// https://www.tutorialspoint.com/cplusplus/cpp_polymorphism.htm
  
 class Shape {
    protected:
@@ -11,10 +12,12 @@ class Shape {
          height = b;
       }
 		
-      virtual int area() {
+      virtual int area() = 0 ;
+/*      {
          cout << "Parent class area :" <<endl;
          return 0;
       }
+      */
 };
 
 class Rectangle: public Shape {

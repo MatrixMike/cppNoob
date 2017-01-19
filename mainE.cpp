@@ -29,6 +29,10 @@ public:
    int getArea() { 
       return (width * height); 
    }
+   public:
+   int getPerimeter() {
+	   return ((width + height)*2);
+   }
 };
 
 class Triangle: public Shape {
@@ -55,6 +59,6 @@ int main(void) {
    cout << "Total Triangle area: " << Tri.getArea() << endl; 
    
    // Now Print the perimeter 
-
+   cout << "Total Rectangle perimeter: " << Rect.getPerimeter() << endl; 
    return 0;
 }
