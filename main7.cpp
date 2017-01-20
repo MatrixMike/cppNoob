@@ -20,7 +20,7 @@ class Box {
          height = hei;
       }
 		
-      // Overload + operator to add two Box objects.
+      // Overload + operator to add two Box objects.  // is this some form of constructor?
       Box operator+(const Box& b) {
          Box box;
          box.length = this->length + b.length;
