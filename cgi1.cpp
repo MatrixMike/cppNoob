@@ -13,6 +13,7 @@ const string ENV[24] = {
   "SERVER_NAME", "SERVER_PORT", "SERVER_PROTOCOL",
   "SERVER_SIGNATURE", "SERVER_SOFTWARE"
 };
+const string nl ="\n";
 
 int
 main ()
@@ -44,6 +45,12 @@ main ()
     }
 
   cout << "</table><\n";
+  cout << "Value of __LINE__ : " << __LINE__ << nl << endl;
+  cout << "Value of __FILE__ : " << __FILE__ << nl << endl;
+  cout << "Value of __DATE__ : " << __DATE__ << nl << endl;
+  cout << "Value of __TIME__ : " << __TIME__ << nl << endl;
+  cout << "Mike debug" << nl << endl;
+  
   cout << "</body>\n";
   cout << "</html>\n";
 
