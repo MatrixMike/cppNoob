@@ -44,10 +44,21 @@ public:
     b = ((a * a) - 1) / 2;
     return b;
   }
+  int evenb ()
+  {
+    b = ((a / 2) * (a / 2)) - 1;
+    return b;
+  }
   int oddc ()
   {
     c = b + 1;
     return c;
+  }
+  int evenc ()
+  {
+    c = b + 2;
+    return c;
+
   }
 
 /* need to note that formulae for triples based on odd a and for even a are known
@@ -95,15 +106,28 @@ main ()
 	  cout << "test passed : " << pythagtriple.geta () << endl;
 	}
 
-      pythagtriple.showtriple ();
-      cout << "values = " << pythagtriple.geta () << " " << pythagtriple.
-	getb () << " " << pythagtriple.getc () << endl;
+      //     pythagtriple.showtriple ();
+      cout << "values = " << pythagtriple.
+	geta () << " " << pythagtriple.getb () << " " << pythagtriple.
+	getc () << endl;
 
 
       // a test now
       // (a*a) + (b*b) = (c*c)
 
     }
+
+  cout << "Now for the evens..." << endl;
+  for (int cv = 4; cv < 20; cv = cv + 2)
+    {
+      cout << "start loop... " << endl;
+      pythagtriple.seta (cv);
+ //     pythagtriple.showtriple ();
+      cout << "evenb = " << pythagtriple.evenb () << endl;
+      cout << "evenc = " << pythagtriple.evenc () << endl;
+      pythagtriple.showtriple ();
+    }
+
 //  p1.setb (3);
 //  p1.setc (3);
 
