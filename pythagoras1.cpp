@@ -25,7 +25,7 @@ public:
   }
   int getb ()
   {
-    return a;
+    return b;
   }
   void setc (int len)
   {
@@ -33,7 +33,7 @@ public:
   }
   int getc ()
   {
-    return a;
+    return c;
   }
   void showtriple ()
   {
@@ -80,17 +80,30 @@ main ()
 {
   cout << "starting..." << endl;
   pythagtriple pythagtriple;
-  
-  for (int cv = 3; cv < 20; cv = cv +2){
-  pythagtriple.showtriple ();
-  pythagtriple.seta (cv);
-  pythagtriple.showtriple ();
-  cout << "values = " << pythagtriple.geta () << " " << pythagtriple.
-    getb () << " " << pythagtriple.getc () << endl;
-    
-  cout << "oddb = " << pythagtriple.oddb () << endl;
-  cout << "oddc = " << pythagtriple.oddc () << endl;
-}
+
+  for (int cv = 3; cv < 20; cv = cv + 2)
+    {
+      cout << "start loop... " << endl;
+      pythagtriple.seta (cv);
+      cout << "oddb = " << pythagtriple.oddb () << endl;
+      cout << "oddc = " << pythagtriple.oddc () << endl;
+      pythagtriple.showtriple ();
+      if (((pythagtriple.geta () * pythagtriple.geta ()) +
+	   (pythagtriple.getb () * pythagtriple.getb ())) ==
+	  (pythagtriple.getc () * pythagtriple.getc ()))
+	{
+	  cout << "test passed : " << pythagtriple.geta () << endl;
+	}
+
+      pythagtriple.showtriple ();
+      cout << "values = " << pythagtriple.geta () << " " << pythagtriple.
+	getb () << " " << pythagtriple.getc () << endl;
+
+
+      // a test now
+      // (a*a) + (b*b) = (c*c)
+
+    }
 //  p1.setb (3);
 //  p1.setc (3);
 
