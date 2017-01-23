@@ -69,6 +69,7 @@ main ()
 {
   cout << "starting..." << endl;
   pythagtriple pythagtriple;
+  pythagtriple.showtriple ();
   pythagtriple.seta (7);
   pythagtriple.showtriple ();
   cout << "oddb = " << pythagtriple.oddb () << endl;
