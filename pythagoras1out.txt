@@ -1,0 +1,71 @@
+starting...
+Constructor called!
+start loop... 
+a,b,c are 3 4 5 
+test passed : 3
+values = 3 4 5
+start loop... 
+a,b,c are 5 12 13 
+test passed : 5
+values = 5 12 13
+start loop... 
+a,b,c are 7 24 25 
+test passed : 7
+values = 7 24 25
+start loop... 
+a,b,c are 9 40 41 
+test passed : 9
+values = 9 40 41
+start loop... 
+a,b,c are 11 60 61 
+test passed : 11
+values = 11 60 61
+start loop... 
+a,b,c are 13 84 85 
+test passed : 13
+values = 13 84 85
+start loop... 
+a,b,c are 15 112 113 
+test passed : 15
+values = 15 112 113
+start loop... 
+a,b,c are 17 144 145 
+test passed : 17
+values = 17 144 145
+start loop... 
+a,b,c are 19 180 181 
+test passed : 19
+values = 19 180 181
+Now for the evens...
+start loop... 
+evenb = 3
+evenc = 5
+a,b,c are 4 3 5 
+start loop... 
+evenb = 8
+evenc = 10
+a,b,c are 6 8 10 
+start loop... 
+evenb = 15
+evenc = 17
+a,b,c are 8 15 17 
+start loop... 
+evenb = 24
+evenc = 26
+a,b,c are 10 24 26 
+start loop... 
+evenb = 35
+evenc = 37
+a,b,c are 12 35 37 
+start loop... 
+evenb = 48
+evenc = 50
+a,b,c are 14 48 50 
+start loop... 
+evenb = 63
+evenc = 65
+a,b,c are 16 63 65 
+start loop... 
+evenb = 80
+evenc = 82
+a,b,c are 18 80 82 
