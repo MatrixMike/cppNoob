@@ -11,18 +11,29 @@ public:
     cout << "Constructor called!" << endl;
   }
 
-
   void seta (int len)
   {
     a = len;
+  }
+  int geta ()
+  {
+    return a;
   }
   void setb (int len)
   {
     b = len;
   }
+  int getb ()
+  {
+    return a;
+  }
   void setc (int len)
   {
     c = len;
+  }
+  int getc ()
+  {
+    return a;
   }
   void showtriple ()
   {
@@ -69,11 +80,17 @@ main ()
 {
   cout << "starting..." << endl;
   pythagtriple pythagtriple;
+  
+  for (int cv = 3; cv < 20; cv = cv +2){
   pythagtriple.showtriple ();
-  pythagtriple.seta (7);
+  pythagtriple.seta (cv);
   pythagtriple.showtriple ();
+  cout << "values = " << pythagtriple.geta () << " " << pythagtriple.
+    getb () << " " << pythagtriple.getc () << endl;
+    
   cout << "oddb = " << pythagtriple.oddb () << endl;
   cout << "oddc = " << pythagtriple.oddc () << endl;
+}
 //  p1.setb (3);
 //  p1.setc (3);
 
