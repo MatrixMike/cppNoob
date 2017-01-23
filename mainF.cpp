@@ -1,14 +1,15 @@
 #include <fstream>
 #include <iostream>
+#include <string>
 using namespace std;
  
 int main () {
-    
+     string filename = "afilename.dat";   // could be preceeded with const
    char data[100];
 
    // open a file in write mode.
    ofstream outfile;
-   outfile.open("afile.dat");
+   outfile.open(filename);
 
    cout << "Writing to the file" << endl;
    cout << "Enter your name: "; 
@@ -29,7 +30,7 @@ int main () {
 
    // open a file in read mode.
    ifstream infile; 
-   infile.open("afile.dat"); 
+   infile.open(filename); 
  
    cout << "Reading from the file" << endl; 
    infile >> data; 
