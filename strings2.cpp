@@ -11,7 +11,9 @@ int main()
 	str3 = str1;
 	cout << "str3 : " << str3 << endl;
 // concatenates str1 and str2
+for (int cv=1; cv < 5; cv++){
 	str3 = str1 + str2;
+}
 	cout << "str1 + str2 : " << str3 << endl;
 // total lenghth of str3 after concatenation
 	len = str3.size();
