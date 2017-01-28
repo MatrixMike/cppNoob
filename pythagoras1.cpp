@@ -117,6 +117,13 @@ int main()
 		dummyc = pythagtriple.evenc();	// << endl;
 		pythagtriple.showtriple();
 	}
+	for (int cv = 4; cv < MAXTRIPLE; cv = cv + 1) {
+		if (cv % 2 == 0) {
+			cout << "even " << cv << endl;
+		} else {
+			cout << "odd  " << cv << endl;
+		}
+	}
 //  p1.setb (3);
 //  p1.setc (3);
 // following two lines commented as unsure their effects ATM
