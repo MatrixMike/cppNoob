@@ -28,10 +28,9 @@ using namespace std;
 			return (d1);								\
 		return (d2);								\
 }
- define_max(int);
- define_max(float);
- define_max(char);
- 
+define_max(int);
+define_max(float);
+define_max(char);
 
 /*	template < class kind > 
 	kind max(kind d1, kind d2) {
@@ -40,10 +39,17 @@ using namespace std;
 		return (d2);
 	}
 	*/
-	
+
 int main(int argc, char **argv)
 {
 	float f = max(3.5, 8.7);
+	int i = max(100, 800);
+	char ch = max('A', 'Q');
+	int i2 = max(600, 200);
+
 	cout << "using templates: f = " << f << endl;
+	cout << "using templates: i = " << i << endl;
+	cout << "using templates: ch = " << ch << endl;
+	cout << "using templates: i2 = " << i2 << endl;
 	return 0;
 }
