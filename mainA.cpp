@@ -11,15 +11,8 @@ class safearray {
 		register int i;
 		for (i = 0; i < SIZE; i++) {
 			arr[i] = i * i;
-	}} int &operator[] (int i)	// not sure about this yet
-	{
-		if (i > SIZE) {
-			cout << "Index out of bounds" << endl;
-			// return first element.
-			return arr[0];
-		}
-		return arr[i];
-	}
+	}} 
+
 };
 
 int main()

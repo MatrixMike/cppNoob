@@ -25,7 +25,7 @@ main ()
   cout << "<title>CGI Envrionment Variables</title>\n";
   cout << "</head>\n";
   cout << "<body>\n";
-  cout << "<table border = \"0\" cellspacing = \"2\">";
+  cout << "<table border = \"1\" cellspacing = \"2\">";
 
   for (int i = 0; i < 24; i++)
     {
@@ -45,7 +45,7 @@ main ()
     }
 
   cout << "</table><\n";
-  cout << "Value of __LINE__ : " << __LINE__ << nl << endl;
+  cout << "Value of __LINE__ : " << __LINE__  << endl;
   cout << "Value of __FILE__ : " << __FILE__ << nl << endl;
   cout << "Value of __DATE__ : " << __DATE__ << nl << endl;
   cout << "Value of __TIME__ : " << __TIME__ << nl << endl;
