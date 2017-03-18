@@ -28,7 +28,7 @@ int main()
 		str3 = str3 + Result;
 	}
 	cout << "str1 + str2 : " << str3 << endl;
-// total lenghth of str3 after concatenation
+// total length of str3 after concatenation
 	len = str3.size();
 	cout << "str3.size() : " << len << endl;
 	return 0;

@@ -1,5 +1,5 @@
 /*
- * templates1.cpp
+ * templates2.cpp
  * 
  * Copyright 2017 Mike Hewitt <mikeh@mikeh-Inspiron-1501>
  * 
@@ -20,39 +20,39 @@
  * 
  * 
  */
-
 #include <iostream>
+#include <string>
+
 using namespace std;
-/*
-#define define_max(type) type max(type d1, type d2) 	{	\
-		if (d1 > d2) 									\
-			return (d1);								\
-		return (d2);								\
+
+template <typename T>
+inline T const& Max (T const& a, T const& b)  { 
+   return a < b ? b:a; 
+} 
+
+int main () {
+ 
+   int i = 39;
+   int j = 20;
+   cout << "Max(i, j): " << Max(i, j) << endl; 
+
+   double f1 = 13.5; 
+   double f2 = 20.7; 
+   cout << "Max(f1, f2): " << Max(f1, f2) << endl; 
+
+   string s1 = "Hello"; 
+   string s2 = "World"; 
+   cout << "Max(s1, s2): " << Max(s1, s2) << endl; 
+
+   return 0;
 }
-
-
-define_max(int);
-define_max(float);
-define_max(char);
-*/
-template < class kind > 
-	kind max(kind d1, kind d2) {
-		if (d1 > d2)
-			return (d1);
-		return (d2);
-	}
-	
+/*
+#include <iostream>
 
 int main(int argc, char **argv)
 {
-	float f = max(3.5, 8.7);
-	int i = max(100, 800);
-	char ch = max('A', 'Q');
-	int i2 = max(600, 200);
-
-	cout << "using templates: f = " << f << endl;
-	cout << "using templates: i = " << i << endl;
-	cout << "using templates: ch = " << ch << endl;
-	cout << "using templates: i2 = " << i2 << endl;
+	
 	return 0;
 }
+*/
+
