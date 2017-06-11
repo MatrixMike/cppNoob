@@ -5,7 +5,6 @@
  * 
  */
 
-
 #include <stdio.h>
 
 //* this is the definition of the anonymous function */
