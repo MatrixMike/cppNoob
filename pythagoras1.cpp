@@ -85,13 +85,13 @@ int main()
 	pythagtriple pythagtriple;
 
 	for (int cv = 3; cv < MAXTRIPLE; cv = cv + 2) {
-		int dummyb, dummyc;
+		//int dummyb, dummyc;
 		cout << "start loop... " << endl;
 		pythagtriple.seta(cv);
 		//    cout << "oddb = " << 
-		dummyb = pythagtriple.oddb();	// () << endl;
+		//dummyb = pythagtriple.oddb();	// () << endl;
 		//    cout << "oddc = " << 
-		dummyc = pythagtriple.oddc();	// () << endl;
+		//dummyc = pythagtriple.oddc();	// () << endl;
 		pythagtriple.showtriple();
 		if (((pythagtriple.geta() * pythagtriple.geta()) +
 		     (pythagtriple.getb() * pythagtriple.getb())) ==
@@ -107,14 +107,14 @@ int main()
 
 	cout << "Now for the evens..." << endl;
 	for (int cv = 4; cv < MAXTRIPLE; cv = cv + 2) {
-		int dummyb, dummyc;
+		//int dummyb, dummyc;
 		cout << "start loop... " << endl;
 		pythagtriple.seta(cv);
 		//     pythagtriple.showtriple ();
 		// cout << "evenb = " <<
-		dummyb = pythagtriple.evenb();	// << endl;
+		//dummyb = pythagtriple.evenb();	// << endl;
 		// cout << "evenc = " <<
-		dummyc = pythagtriple.evenc();	// << endl;
+		//dummyc = pythagtriple.evenc();	// << endl;
 		pythagtriple.showtriple();
 	}
 	for (int cv = 4; cv < MAXTRIPLE; cv = cv + 1) {
