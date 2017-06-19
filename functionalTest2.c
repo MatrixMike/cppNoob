@@ -10,12 +10,12 @@
 //* this is the definition of the anonymous function */
 #define lambda(l_ret_type, l_arguments, l_body)         \
   ({                                                    \
-   l_ret_type l_anonymous_functions_name l_arguments   \
-   l_body                                            \
-   &l_anonymous_functions_name;                        \
+   l_ret_type l_anonymous_functions_name l_arguments    \
+   l_body                                               \
+   &l_anonymous_functions_name;                         \
    })
 
-#define forEachInArray(fe_arrType, fe_arr, fe_fn_body)                                            \
+#define forEachInArray(fe_arrType, fe_arr, fe_fn_body)                                    \
 {                                                                                         \
   int i=0;                                                                                \
   for(;i<sizeof(fe_arr)/sizeof(fe_arrType);i++) {  fe_arr[i] = fe_fn_body(&fe_arr[i]); }  \
