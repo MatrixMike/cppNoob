@@ -30,16 +30,17 @@ typedef struct __test
 void printout(const testtype * array)
 {
   int i;
-  for ( i = 0; i < 3; ++ i )
+  for ( i = 0; i < 4; ++ i )
     printf("%d %d\n", array[i].a, array[i].b);
   printf("\n");
 }
 
 int main(void)
 {
-  testtype array[] = { {0,1}, {2,3}, {4,5} };
+  testtype array[] = { {0,1}, {2,3}, {4,5}, {6,7}};
 
   printout(array);
+ // printf(sizeof(array[]));
   /* the anonymous function is given as function for the foreach */
   forEachInArray(testtype, array,
     lambda (testtype, (void *item),
