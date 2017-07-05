@@ -9,7 +9,8 @@
 
 
 #include "geanytest1.hpp"
-
+#include <iostream>
+using namespace std;
 
 geanytest1::geanytest1()
 {
@@ -27,7 +28,8 @@ geanytest1::~geanytest1()
 
 int main(int argc, char **argv)
 {
-	
+	int x = 6;
+	   cout << "Volume of Box3 : " << x <<endl;
 	return 0;
 }
 
