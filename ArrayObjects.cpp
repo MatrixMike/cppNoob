@@ -1,10 +1,19 @@
 //#include<iostream.h>
 //#include<conio.h>
 #include <iostream>
+namespace std {
+  template <typename _CharT, typename _Traits>
+  inline basic_ostream<_CharT, _Traits> &
+  tab(basic_ostream<_CharT, _Traits> &__os) {
+    return __os.put(__os.widen('\t'));
+  }
+}
 using namespace std;
 // ArrayObjects.cpp:5: style: The class 'Employee' does not have a constructor.
+// remember to try cppcheck and discover easy-fix warnings
        class Employee
        {
+
               int Id;
               char Name[25];
               int Age;
@@ -13,7 +22,7 @@ using namespace std;
               public:
               void GetData()           //Statement 1 : Defining GetData()
               {
-                    cout<< std::endl<<"\tEnter Employee Id : ";
+                    cout<< std::endl<< std::tab<<"Enter Employee Id : ";
                     cin>>Id;
 
                     cout<< std::endl<<"\tEnter Employee Name : ";
@@ -30,7 +39,9 @@ using namespace std;
               {
                     cout<< std::endl<<Id<<"\t"<<Name<<"\t"<<Age<<"\t"<<Salary;
               }
-
+		   Employee(){
+//			   ArrayObjects.cpp:41: warning: Member variable 'Employee::Id' is not initialized in the constructor.
+		   }
        };
 
 
