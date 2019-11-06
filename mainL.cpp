@@ -27,7 +27,7 @@ int main () {
    pthread_attr_t attr;
    void *status;
 
-   // Initialize and set thread joinable
+   // Initialize and set thread join-able
    pthread_attr_init(&attr);
    pthread_attr_setdetachstate(&attr, PTHREAD_CREATE_JOINABLE);
 

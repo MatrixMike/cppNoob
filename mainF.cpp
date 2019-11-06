@@ -4,7 +4,7 @@
 using namespace std;
  
 int main () {
-     string filename = "afilename.dat";   // could be preceeded with const
+     string filename = "afilename.dat";   // could be preceded with const
    char data[100];
 
    // open a file in write mode.

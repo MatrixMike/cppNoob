@@ -2,6 +2,7 @@
 //#include<conio.h>
 #include <iostream>
 using namespace std;
+// ArrayObjects.cpp:5: style: The class 'Employee' does not have a constructor.
        class Employee
        {
               int Id;
@@ -12,22 +13,22 @@ using namespace std;
               public:
               void GetData()           //Statement 1 : Defining GetData()
               {
-                    cout<<"\n\tEnter Employee Id : ";
+                    cout<< std::endl<<"\tEnter Employee Id : ";
                     cin>>Id;
 
-                    cout<<"\n\tEnter Employee Name : ";
+                    cout<< std::endl<<"\tEnter Employee Name : ";
                     cin>>Name;
 
-                    cout<<"\n\tEnter Employee Age : ";
+                    cout<< std::endl<<"\tEnter Employee Age : ";
                     cin>>Age;
 
-                    cout<<"\n\tEnter Employee Salary : ";
+                    cout<< std::endl<<"\tEnter Employee Salary : ";
                     cin>>Salary;
               }
 
               void PutData()           //Statement 2 : Defining PutData()
               {
-                    cout<<"\n"<<Id<<"\t"<<Name<<"\t"<<Age<<"\t"<<Salary;
+                    cout<< std::endl<<Id<<"\t"<<Name<<"\t"<<Age<<"\t"<<Salary;
               }
 
        };
@@ -42,11 +43,11 @@ using namespace std;
 
               for(i=0;i<3;i++)
               {
-                    cout<<"\nEnter details of "<<i+1<<" Employee";
+                    cout<< std::endl<<"Enter details of "<<i+1<<" Employee";
                     E[i].GetData();
               }
 
-              cout<<"\nDetails of Employees";
+              cout<< std::endl<<"Details of Employees";
               for(i=0;i<3;i++)
               E[i].PutData();
 

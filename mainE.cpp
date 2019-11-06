@@ -2,7 +2,7 @@
 #include <math.h>
  // https://www.tutorialspoint.com/cplusplus/cpp_interfaces.htm
  // also www.friesian.com/pythag.htm
- // 19.01.2017   Mike Hewitt mods to merge c++ and pythagoras
+ // 19.01.2017   Mike Hewitt mods to merge c++ and Pythagoras
 using namespace std;
 
 // Base class
