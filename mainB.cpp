@@ -38,13 +38,13 @@ public:
    }
 	
    // Return value indicates end of list:
-   bool operator++() // Prefix version { 
+   bool operator++() { // Prefix version { 
       if(index >= oc.a.size()) return false;
       if(oc.a[++index] == 0) return false;
       return true;
    }
 	
-   bool operator++(int) // Postfix version { 
+   bool operator++(int) { // Postfix version { 
       return operator++();
    }
 	

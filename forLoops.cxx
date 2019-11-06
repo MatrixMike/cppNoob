@@ -11,7 +11,7 @@ int main(int argc, char **argv)
 		for (int mths = 0, test = 6; mths < monthsInYear; mths++) {
 		std::cout << 1 + mths;	
 		std::cout << std::endl;	
-	    std::cout << std::endl << "Hello werd World!" << std::endl;
+	    std::cout << std::endl << "Hello werd labor World!" << std::endl;
 		test++;		
 		}
 	return 0;
