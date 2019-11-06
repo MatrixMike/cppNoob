@@ -2,12 +2,12 @@
 #include "functions.h"
 
 void print_hello(){
-   std::cout << "Hello World!";
+   std::cout << "Hello World!" << std::endl;
 }
 
 int main()
-{
-	if (int length = 2; length == 2)
+{int length = 2;
+	if ( length == 2)
 	{
 	print_hello();
 	}
