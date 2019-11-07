@@ -2,7 +2,10 @@
 #include "functions.h"
 
 void print_hello(){
-   std::cout << "Hello World!" << std::endl;
+   std::cout << "Hello World!  0O" << std::endl;
+   std::cout << 123    << '\n'
+          << 0123   << '\n'
+          << 0177   << '\n';
 }
 
 int main()
