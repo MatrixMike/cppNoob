@@ -11,6 +11,6 @@ int main()
 	std::cout << "The factorial of 5 is " << factorial(5) << "\n";
 	std::cout << "\n";
 
-	stack stack;
+//	stack stack;    // commented to make clean compile 11.01.2021 21:58:00
 	return 0;
 }
