@@ -8,7 +8,7 @@ using namespace std;
 #define NUM_THREADS     5
 
 void *wait(void *t) {
-   int i;
+// todo   int i;
    long tid;
 
    tid = (long)t;

@@ -15,10 +15,11 @@ void *PrintHello(void *threadid) {
 
 int main () {
    pthread_t threads[NUM_THREADS];
-   int rc;
+// todo   int rc;
    int i;
 	
    for( i=0; i < NUM_THREADS; i++ ){
+    int rc;
       cout << "main() : creating thread, " << i << endl;
       rc = pthread_create(&threads[i], NULL, PrintHello, (void *)i);
 		

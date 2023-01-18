@@ -24,6 +24,3 @@ $(EXECUTABLE): $(OBJECTS)
 
 
 # DO NOT DELETE
-
-functionalTest1.o: /usr/include/stdio.h
-functionalTest2.o: /usr/include/stdio.h

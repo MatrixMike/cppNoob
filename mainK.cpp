@@ -27,10 +27,11 @@ int main () {
    pthread_t threads[NUM_THREADS];
    struct thread_data td[NUM_THREADS];
 	
-   int rc;
+// todo   int rc;
    int i;
 
    for( i=0; i < NUM_THREADS; i++ ){
+    int rc;
       cout <<"main() : creating thread, " << i << endl;
       td[i].thread_id = i;
       td[i].message = "This is message";
