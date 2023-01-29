@@ -7,4 +7,6 @@
                     main.cpp factorial.cpp)
  add_executable(pythagoras1 
                     pythagoras1.cpp)
-
+ add_executable(threads 
+                    mainL.cpp)
+ add_link_options(-pthread)

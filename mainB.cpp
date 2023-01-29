@@ -29,7 +29,7 @@ public:
 
 // implement smart pointer to access member of Obj class.
 class SmartPointer {
-   ObjContainer oc;
+   ObjContainer oc = objc;
    int index;
 public:
    SmartPointer(ObjContainer& objc) { 
