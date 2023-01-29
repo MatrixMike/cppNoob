@@ -1,6 +1,11 @@
 
  cmake_minimum_required(VERSION 3.16.3)
  project(cppNoobTest)
+
+set(CMAKE_THREAD_PREFER_PTHREAD TRUE)
+set(THREADS_PREFER_PTHREAD_FLAG TRUE)
+find_package(Threads REQUIRED)
+
  add_executable(main2 
                     main2.cpp)
  add_executable(main 
@@ -9,4 +14,4 @@
                     pythagoras1.cpp)
  add_executable(threads 
                     mainL.cpp)
- add_link_options(-pthread)
+ target_link_libraries(threads Threads::Threads)
