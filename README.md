@@ -1,3 +1,4 @@
+part of new cmake journey 29/11/24
 # cppNoob
 cpp deliberately created in small section for training purposes
 # remember (until further notice) to do a 'make all'.
