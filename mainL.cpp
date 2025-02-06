@@ -31,7 +31,7 @@ int main () {
    pthread_attr_init(&attr);
    pthread_attr_setdetachstate(&attr, PTHREAD_CREATE_JOINABLE);
 
-   for( i=0; i < NUM_THREADS; i++ ){
+   for( long i=0; i < NUM_THREADS; i++ ){
       cout << "main() : creating thread, " << i << endl;
       rc = pthread_create(&threads[i], &attr, wait, (void *)i );
 		
