@@ -7,7 +7,7 @@ using namespace std;
 
 #define NUM_THREADS     5
 
-void *wait(void *t) {
+static void *wait(void *t) {
 // todo   int i;
    long tid;
 
@@ -23,7 +23,7 @@ int main () {
    int rc;
    int i;
 	
-   pthread_t threads[NUM_THREADS];
+   pthread_t threads[NUM_THREADS]{};
    pthread_attr_t attr;
    void *status;
 
