@@ -51,7 +51,7 @@ using namespace std;
               int i;
 
               Employee E[3];           //Statement 3 : Creating Array of 3 Employees
-
+				cout << "Enter 3 employees"<<std::endl;
               for(i=0;i<3;i++)
               {
                     cout<< std::endl<<"Enter details of "<<i+1<<" Employee";

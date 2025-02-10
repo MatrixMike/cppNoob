@@ -29,7 +29,7 @@ int factorial(int n) {
     if (n == 1) return 1; 
     return n * factorial(n-1); 
 } 
-String lcs(String x, String y) {
+string lcs(String x, String y) {
         int m = x.length(), n = y.length();
         int[][] opt = new int[m+1][n+1];
         for (int i = m-1; i >= 0; i--) {

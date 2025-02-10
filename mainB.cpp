@@ -29,8 +29,8 @@ public:
 
 // implement smart pointer to access member of Obj class.
 class SmartPointer {
-   ObjContainer oc = objc;
-   int index;
+   ObjContainer oc ;
+   long unsigned int index; // int index;
 public:
    SmartPointer(ObjContainer& objc) { 
       oc = objc;

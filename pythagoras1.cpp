@@ -12,7 +12,8 @@ const int MAXTRIPLE = 25;
 class pythagtriple {
  private:int a, b, c;
  public:
-	 pythagtriple() {
+	 pythagtriple() {  // investigate : looks like b & c are not being set 
+		 // also try on Arduino and then on Native Android
 		cout << "Constructor called!" << endl;
 		a = b = c = 0;
 	} void seta(int len) {
